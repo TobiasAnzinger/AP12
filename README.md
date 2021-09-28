@@ -5,4 +5,4 @@
 
 **DB Skripte**
 * in `sql` directory
-* if the database is added in intellij you can runn them directly on the database
+* if the database is added in intellij you can run them directly on the database
