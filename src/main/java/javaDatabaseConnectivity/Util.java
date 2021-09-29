@@ -24,7 +24,8 @@ public class Util {
             if (connection != null && !connection.isClosed()) {
                 return connection;
             }
-            Properties properties = readPropertyFile(db + ".properties");
+            Properties properties = readPropertyFile("src/main/resources/" + db + ".properties");
+
 
 //            Class.forName(properties.getProperty("DBDRIVER"));
             assert properties != null;
@@ -61,7 +62,7 @@ public class Util {
             prop.load(new FileReader(filename));
             return prop;
         } catch (FileNotFoundException e) {
-            log.error("Could not fina a property file with the name: " + filename);
+            log.error("Could not find a property file with the name: " + filename);
         } catch (IOException e) {
             log.error("");
         }
