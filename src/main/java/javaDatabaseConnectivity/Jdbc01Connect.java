@@ -12,7 +12,7 @@ public class Jdbc01Connect {
 
         Logger log = LoggerFactory.getLogger(Main.class);
         log.info("JDBC01 Connection test\n====================");
-        Connection con = Util.getConnection("BEISPIEL");
+        Connection con = Util.getConnection("db");
         Util.close(con);
     }
 }

@@ -14,7 +14,7 @@ public class Jdbc02ExecuteUpdate {
 
         Logger log = LoggerFactory.getLogger(Main.class);
         log.info("JDBC02 Execute update\n====================");
-        Connection con = Util.getConnection("BEISPIEL");
+        Connection con = Util.getConnection("db");
         Statement statement;
 
         try {

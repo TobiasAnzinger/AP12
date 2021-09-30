@@ -1,15 +1,13 @@
 package javaDatabaseConnectivity;
 
+import org.nocrala.tools.texttablefmt.Table;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Properties;
 
 
@@ -19,7 +17,7 @@ public class Util {
 
     static Logger log = LoggerFactory.getLogger(Util.class);
 
-    private Util(){
+    private Util() {
     }
 
     public static Connection getConnection(final String db) {
@@ -40,8 +38,8 @@ public class Util {
             DatabaseMetaData databaseMetaData = connection.getMetaData();
             log.info("Connected to database: " + db);
             log.info("Metadaten der Datenbank: " + databaseMetaData.getDriverName()
-                    + "\nDB: " + databaseMetaData.getDatabaseProductName()
-                    + "\nVersion: " + databaseMetaData.getDriverVersion());
+                     + "\nDB: " + databaseMetaData.getDatabaseProductName()
+                     + "\nVersion: " + databaseMetaData.getDriverVersion());
         } catch (SQLException e) {
             log.error("Failed to connect to the database");
             e.printStackTrace();
@@ -59,12 +57,12 @@ public class Util {
         }
     }
 
-    public static void close(AutoCloseable obj){
+    public static void close(AutoCloseable obj) {
         try {
-            if(obj != null){
+            if (obj != null) {
                 obj.close();
             }
-        } catch (Exception e){
+        } catch (Exception e) {
             log.error("failed to close the object");
         }
 
@@ -82,5 +80,22 @@ public class Util {
         }
         return null;
     }
+
+    public static void printResultSet(final ResultSet rs) throws SQLException {
+
+        final int colcnt = rs.getMetaData().getColumnCount();
+        final Table t = new Table(colcnt);
+        for (int col = 1; col <= colcnt; col++) {
+            t.addCell(rs.getMetaData().getColumnLabel(col));
+        }
+        while (rs.next()) {
+            for (int col = 1; col <= colcnt; col++) {
+                final Object o = rs.getObject(col);
+                t.addCell(o == null ? "" : o.toString());
+            }
+        }
+        System.out.println(t.render());
+    }
+
 
 }

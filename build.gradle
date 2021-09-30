@@ -16,9 +16,10 @@ dependencies {
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.26'
 
-
-
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12
     implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: '2.0.0-alpha5'
+
+    // https://mvnrepository.com/artifact/org.nocrala.tools.texttablefmt/text-table-formatter
+    implementation group: 'org.nocrala.tools.texttablefmt', name: 'text-table-formatter', version: '1.2.4'
 
 }
