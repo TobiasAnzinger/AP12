@@ -19,6 +19,9 @@ public class Util {
 
     static Logger log = LoggerFactory.getLogger(Util.class);
 
+    private Util(){
+    }
+
     public static Connection getConnection(final String db) {
         try {
             if (connection != null && !connection.isClosed()) {
@@ -54,6 +57,17 @@ public class Util {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void close(AutoCloseable obj){
+        try {
+            if(obj != null){
+                obj.close();
+            }
+        } catch (Exception e){
+            log.error("failed to close the object");
+        }
+
     }
 
     private static Properties readPropertyFile(String filename) {
