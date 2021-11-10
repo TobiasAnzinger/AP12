@@ -16,6 +16,12 @@
                       value="root"/>
             <property name="javax.persistence.jdbc.password"
                       value="123"/>
+
+            <!-- Bei jedem Start des Java-Programms
+     werden alle vom Programm genutzten Tabellen gelöscht
+     und neu erstellt.                                     -->
+            <property name  = "hibernate.hbm2ddl.auto"
+                      value = "create"                                  />
         </properties>
     </persistence-unit>
 </persistence>

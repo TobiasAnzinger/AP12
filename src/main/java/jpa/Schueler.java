@@ -2,13 +2,17 @@ package jpa;
 
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
 //@Table(name = "Schueler")
 @Data
+//@Getter
+//@Setter
+@Entity
 public class Schueler implements Serializable {
 
 
@@ -17,11 +21,10 @@ public class Schueler implements Serializable {
     }
 
     @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-//    @Column(name = "name", length = 50, nullable = false, unique = false)
-
+//    @Column(length = 50, nullable = false, unique = false)
     private String name;
 
 }
