@@ -2,12 +2,7 @@ package javaDatabaseConnectivity;
 
 import java.sql.*;
 
-/**
- * Beispiel: Jdbc03ExecuteQuery
- *
- * @author <a href="mailto:mgn.schule@gmx.de">Michael Niedermair</a>
- * @version $Revision: 1117 $
- */
+
 public class Jdbc03ExecuteQuery {
 
     public static void main(final String[] args) {

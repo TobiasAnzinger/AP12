@@ -22,4 +22,12 @@ dependencies {
     // https://mvnrepository.com/artifact/org.nocrala.tools.texttablefmt/text-table-formatter
     implementation group: 'org.nocrala.tools.texttablefmt', name: 'text-table-formatter', version: '1.2.4'
 
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-gradle-plugin
+    implementation group: 'org.hibernate', name: 'hibernate-gradle-plugin', version: '5.6.1.Final'
+
+    // https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
+    implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
 }

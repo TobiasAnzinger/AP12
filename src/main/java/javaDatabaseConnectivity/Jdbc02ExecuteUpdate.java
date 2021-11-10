@@ -32,10 +32,20 @@ public class Jdbc02ExecuteUpdate {
             rowsUpdated = statement.executeUpdate(sql2);
             log.info("updated " + rowsUpdated + " rows");
 
-            String sql3 = "INSERT INTO lieferant SET name=\"Niedermeier\";\n" +
-                          "INSERT INTO lieferant SET name=\"Müller\";\n" +
-                          "INSERT INTO lieferant SET name=\"Maier\";\n";
-            statement.execute(sql3);
+
+//            INSERT without batch
+//            String sql3 = "INSERT INTO lieferant SET name=\"Niedermeier\";\n" +
+//                          "INSERT INTO lieferant SET name=\"Müller\";\n" +
+//                          "INSERT INTO lieferant SET name=\"Maier\";\n";
+//            statement.execute(sql3);
+
+//          INSERT with batch
+            statement.addBatch("INSERT INTO lieferant SET name=\"Niedermeier\"");
+            statement.addBatch("INSERT INTO lieferant SET name=\"Müller\"");
+            statement.addBatch("INSERT INTO lieferant SET name=\"Maier\"");
+            statement.executeBatch();
+
+
             log.info("updated " + rowsUpdated + " rows");
 
         } catch (SQLException e) {
