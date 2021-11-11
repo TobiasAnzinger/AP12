@@ -14,12 +14,16 @@ public class Main {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         entityManager.getTransaction().begin();
+
         entityManager.persist(new Schueler("Finn"));
         entityManager.persist(new Schueler("Alex"));
         entityManager.persist(new Schueler("Jovan"));
         entityManager.persist(new Schueler("Tobi"));
+
         entityManager.getTransaction().commit();
 
+
+//        close connection
         entityManager.close();
         entityManagerFactory.close();
 
