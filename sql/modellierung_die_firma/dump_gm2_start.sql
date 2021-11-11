@@ -4,8 +4,9 @@
 -- ------------------------------------------------------
 -- Server version	10.3.31-MariaDB-0ubuntu0.20.04.1
 
-USE gm2;
+CREATE DATABASE IF NOT EXISTS gm2;
 
+USE gm2;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
