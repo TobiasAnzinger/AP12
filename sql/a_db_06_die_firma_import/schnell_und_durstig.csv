@@ -1,0 +1,358 @@
+Biere;;;
+;;;
+Export - Biere 0,5 Liter ;Anzahl/Ltr. ;Preis ;Pfand
+Binding Export ;20 x 0,5 lt ;15,45;3,00
+Dachsenfranz Kellerbier Bügelflasche ;12 x 0,5 lt ;12,45;3,30
+Eichbaum Export ;20 x 0,5 lt ;15,80;3,00
+Heidelberger Export ;20 x 0,5 lt ;16,45;3,00
+Kurpfalz Bräu Kellerbier ;20 x 0,5 lt ;19,45;3,00
+Welde Export ;20 x 0,5 lt ;18,00;3,00
+  ;  ;  ; 
+HELLE Biere 0,5  / 0,33 Liter ;Anzahl/Ltr. ;Preis ;Pfand
+Andechser Hell ;20 x 0,5 lt ;20,95;3,00
+Augustiner Hell ;20 x 0,5 lt ;20,95;3,00
+Chimseer Hell ;20 x 0,5 lt ;20,95;3,00
+Heidelberger Hell ;24 x 0,33 lt ;16,45;3,00
+Kurpfalzbräu Helles ;20 x 0,5 lt ;19,50;3,00
+Kurpfalzbräu Helles ;20 x 0,33 lt ;18,50;3,00
+Mooser Liesl Helles ;20 x 0,5 lt ;20,95;3,00
+Tegernseer Hell ;20 x 0,5 lt ;20,95;3,00
+  ;  ;  ; 
+Pils - Biere 0,5 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Beck´s Pilsner ;20 x 0,5 lt ;19,95;3,00
+Binding Pils ;20 x 0,5 lt ;15,45;3,00
+Bitburger Pils ;20 x 0,5 lt ;16,80;3,00
+Dachsenfranz Waldpils Bügelflasche ;12 x 0,5 lt ;12,45;3,30
+Eichbaum Ureich Pils ;20 x 0,5 lt ;16,95;3,00
+Fürstenberg Pils ;20 x 0,5 lt ;15,80;3,00
+Heidelberger Pils ;20 x 0,5 lt ;15,45;3,00
+Heidelberger 1603 Pils ;20 x 0,5 lt ;15,80;3,00
+Jever Pils ;20 x 0,5 lt ;16,95;3,00
+König Pilsner ;20 x 0,5 lt ;15,80;3,00
+Krombacher Pils ;20 x 0,5 lt ;16,80;3,00
+Mönchhof Original Pils Bügelflasche ;20 x 0,5 lt ;18,00;4,50
+Rothaus Pils ;20 x 0,5 lt ;17,30;3,00
+Welde Nr.1 Pils ;20 x 0,5 lt ;18,00;3,00
+  ;  ;  ; 
+Pils - Biere 0,33 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Beck´s Pilsner ;24 x 0,33 lt ;18,95;3,00
+Bitburger Pils ;24 x 0,33 lt ;16,80;3,00
+Bitburger Pils Stubbi ;20 x 0,33 lt ;13,45;3,00
+Eichbaum Kläänes Pils Bügelflasche ;20 x 0,33 lt ;14,95;4,50
+Eichbaum Ureich Pils ;24 x 0,33 lt ;16,45;3,00
+Flensburger Pils Bügelflasche ;20 x 0,33 lt ;16,45;4,50
+Heidelberger 1603 Pils ;24 x 0,33 lt ;16,45;3,00
+Jever Pils ;24 x 0,33 lt ;16,95;3,00
+Rothaus Tannenzäpfchen ;24 x 0,33 lt ;18,00;3,00
+Rothaus Tannenzäpfchen ;10 x 0,33 lt ;8,50;2,00
+Warsteiner ;24 x 0,33 lt ;16,80;3,00
+Welde Nr.1 Pils ;24 x 0,33 lt ;18,00;3,00
+  ;  ;  ; 
+Weizen -Biere 0,5 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Andechser Weissbier hell ;20 x 0,5 lt ;20,95;3,00
+Benediktiner Hefe hell ;20 x 0,5 lt ;20,95;3,00
+Erdinger Weißbier Hefe hell ;20 x 0,5 lt ;19,00;3,00
+Franziskaner Weißbier Hefe hell ;20 x 0,5 lt ;19,95;3,00
+Kurpfalz Bräu Ur-Weizen trüb ;20 x 0,5 lt ;19,45;3,00
+Paulaner Weißbier Hefe hell ;20 x 0,5 lt ;18,50;3,00
+Paulaner Weizenbier Kristall ;20 x 0,5 lt ;18,50;3,00
+Paulaner Weißbier Hefe dunkel ;20 x 0,5 lt ;18,50;3,00
+Rothaus Weizenbier Hefe hell ;20 x 0,5 lt ;18,00;3,00
+Schneider Weisse Orginal TAP7 ;20 x 0,5 lt ;20,95;3,00
+Schöfferhofer Weizenbier Kristall ;20 x 0,5 lt ;18,00;3,00
+Schöfferhofer Weizenbier Hefe hell ;20 x 0,5 lt ;18,00;3,00
+Schöfferhofer Weizenbier Hefe dunkel ;20 x 0,5 lt ;18,00;3,00
+Welde Weizenbier Hefe hell ;20 x 0,5 lt ;19,00;3,00
+  ;  ;  ; 
+Weizenbiere 0,33 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Rothaus Zäpfle Hefeweizen ;24 x 0,33 lt ;18,00;3,00
+  ;  ;  ; 
+Alkoholfreie Weizenbiere 0,5 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Erdinger Weißbier Hefe hell alkoholfrei ;20 x 0,5 lt ;19,00;3,00
+Paulaner Weißbier Hefe hell alkoholfrei ;20 x 0,5 lt ;18,50;3,00
+Paulaner Weißbier Hefe hell 0,0% ;20 x 0,5 lt ;18,50;3,00
+Welde Weizenbier Hefe hell alkoholfrei ;20 x 0,5 lt ;19,00;3,00
+Welde Sportler Weizen hell alkoholfrei ;20 x 0,5 lt ;19,00;3,00
+  ;  ;  ; 
+Alkoholfreie Biere 0,5 lt ;Anzahl/Ltr ;Preis ;Pfand
+Clausthaler Premium alkoholfrei ;20 x 0,5 lt ;15,80;3,00
+Jever fun alkoholfrei ;20 x 0,5 lt ;17,45;3,00
+  ;  ;  ; 
+Alkoholfreie Biere 0,33 lt ;Anzahlt/Ltr ;Preis ;Pfand
+Clausthaler Premium alkoholfrei ;24 x 0,33 lt ;16,45;3,00
+Rothaus Tannenzäpfle alkoholfrei ;24 x 0,33 lt ;18,00;3,00
+Jever fun alkoholfrei ;24 x 0,33 lt ;17,45;3,00
+Welde Nr.1 Pils alkoholfrei ;24 x 0,33 lt ;18,00;3,00
+  ;  ;  ; 
+Leicht - Biere 0,33 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Jever light ;24 x 0,33 lt ;18,45;3,00
+  ;  ;  ; 
+Radler - Mix - Biere 0,33 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Eichbaum Radler Bügelflasche ;20 x 0,33 lt ;14,95;4,50
+Eichbaum Radler ;24 x 0,33 lt ;16,45;3,00
+Schöfferhofer Grapefruit ;24 x 0,33 lt ;18,00;3,00
+Rothaus Tannenzäpfchen Radler ;24 x 0,33 lt ;18,00;3,00
+Welde Radler naturtrüb ;24 x 0,33 lt ;18,00;3,00
+Welde Grape ;24 x 0,33 lt ;18,00;3,00
+  ;  ;  ; 
+Radler - Biere 0,5 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Welde Radler naturtrüb ;20 x 0,5 lt ;18,00;3,00
+Kurpfalz Bräu Radler naturtrüb ;20 x 0,5 lt ;19,45;3,00
+  ;  ;  ; 
+Radler - Biere 0,33 Liter alkoholfrei ;Anzahl/Ltr ;Preis ;Pfand
+Welde Radler naturtrüb alkoholfrei ;24 x 0,33 lt ;18,00;3,00
+  ;  ;  ; 
+Dunkel - Schwarz - Biere 0,5 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Dachsenfranz Original Dunkel Bügelflasche ;12 x 0,5 lt ;12,45;3,30
+Mönchhof Schwarzbier Bügelflasche ;20 x 0,5 lt ;18,00;4,50
+  ;  ;  ; 
+Malz - Biere 0,33 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Karamalz ;24 x 0,33 lt ;14,45;3,00
+  ;  ;  ; 
+Saison - Biere verschiedene Größen ;Anzahl/Ltr ;Preis ;Pfand
+Heidelberger Bock Bügelflasche ;20 x 0,33 lt ;15,95;4,50
+Kurpfalz Bräu Eis-Bock ;20 x 0,5 lt ;19,45;3,00
+Altenmünster Maibock Bügelflasche ;14 x 0,5 lt ;15,45;3,60
+Altenmünster Winterbier ;14 x 0,5 lt ;15,45;3,60
+Heidelberger Winterbier ;20 x 0,5 lt ;16,95;3,00
+;;;
+ ;;;
+Coca-Cola Produkte;;;
+;;;
+Glasflasche 0,2 Liter ;Anzahl/Ltr. ;Preis ;Pfand
+Coca-Cola ;24 x 0,2 lt ;15,45;5,10
+Coca-Cola light ;24 x 0,2 lt ;15,45;5,10
+Coca-Cola Zero ;24 x 0,2 lt ;15,45;5,10
+Fanta ;24 x 0,2 lt ;15,45;5,10
+Mezzo-Mix ;24 x 0,2 lt ;15,45;5,10
+Sprite ;24 x 0,2 lt ;15,45;5,10
+  ;  ;  ; 
+Glasflasche 0,33 Liter ;Anzahl/Ltr. ;Preis ;Pfand
+Coca-Cola ;24 x 0,33 lt ;17,95;5,10
+Coca-Cola light ;24 x 0,33 lt ;17,95;5,10
+Coca-Cola Zero ;24 x 0,33 lt ;17,95;5,10
+Fanta Orange ;24 x 0,33 lt ;17,95;5,10
+Lift Apfelsaftschorle ;24 x 0,33 lt ;17,95;5,10
+Mezzo-Mix ;24 x 0,33 lt ;17,95;5,10
+Sprite ;24 x 0,33 lt ;17,95;5,10
+  ;  ;  ; 
+Glasflasche 0,5 Liter ;Anzahl/Ltr. ;Preis ;Pfand
+Coca-Cola ;20 x 0,5 lt ;18,45;4,50
+Coca-Cola light ;20 x 0,5 lt ;18,45;4,50
+Coca-Cola Zero ;20 x 0,5 lt ;18,45;4,50
+  ;  ;  ; 
+PEW Flasche 0,5 Liter ;Anzahl/Ltr. ;Preis ;Pfand
+Coca-Cola ;12 x 0,5 lt ;13,25;4,50
+Coca-Cola light ;12 x 0,5 lt ;13,25;4,50
+Coca-Cola Zero ;12 x 0,5 lt ;13,25;4,50
+Fanta Orange ;12 x 0,5 lt ;13,25;4,50
+Lift Apfelsaftschorle ;12 x 0,5 lt ;13,25;4,50
+Mezzo-Mix ;12 x 0,5 lt ;13,25;4,50
+Sprite ;12 x 0,5 lt ;13,25;4,50
+Sprite Zero ;12 x 0,5 lt ;13,25;4,50
+  ;  ;  ; 
+Pet Flasche 1,0 Liter ;Anzahlt/Ltr. ;Preis ;Pfand
+Coca-Cola ;12 x 1,0 lt ;14,50;3,30
+Coca-Cola light ;12 x 1,0 lt ;14,50;3,30
+Coca-Cola koffeinfrei ;12 x 1,0 lt ;14,50;3,30
+Coca-Cola Zero ;12 x 1,0 lt ;14,50;3,30
+Fanta Orange ;12 x 1,0 lt ;14,50;3,30
+Mezzo-Mix ;12 x 1,0 lt ;14,50;3,30
+Sprite ;12 x 1,0 lt ;14,50;3,30
+;;;
+;;;
+Mineralwässer;;;
+;;;
+Mineralwasser Classic ;Anzahl/Ltr ;Preis ;Pfand
+Alwa Classic PET ;12 x 1,0 lt ;7,95;3,30
+Apollinaris Classic PET ;10 x 1,0 lt ;8,50;3,00
+Ensinger Sport PET ;9 x 1,0 lt ;7,95;3,75
+Gerolsteiner Classic ;12 x 1,0 lt ;9,50;3,30
+Kloster Quelle Classic ;12 x 0,7 lt ;5,75;3,30
+Mineralquelle Q4 Classic ;12 x 0,7 lt ;5,25;3,30
+Mineralquelle Q4 Classic PET ;12 x 1,0 lt ;7,50;4,50
+Odenwald Quelle Classic ;12 x 0,7 lt ;6,95;3,30
+Odenwald Quelle Classic PET ;12 x 1,0 lt ;9,25;4,50
+Odenwald Quelle Classic PET ;11 x 0,5 lt ;5,45;4,25
+Rietenauer Classic ;12 x 0,7 lt;6,75;3,30
+Selters Classic ;12 x 0,7 lt ;8,25;3,30
+Selters Classic PET ;12 x 1,0 lt ;9,50;3,30
+Teinacher Classic ;12 x 0,7 lt ;6,95;3,30
+Teinacher Classic PET ;9 x 1,0 lt ;6,95;3,75
+Tönissteiner Classic ;12 x 0,7 lt ;7,95;3,30
+Tönissteiner Classic PET ;12 x 1,0 lt ;8,75;3,30
+Wiesentaler Classic ;12 x 0,7 lt ;6,25;3,30
+Wiesentaler Classic PET ;9 x 1,0 lt ;6,60;3,75
+Wiesentaler Classic ;12 x 0,5 lt ;5,65;3,30
+Wiesentaler Classic PET ;20 x 0,5 lt ;9,90;6,50
+  ;  ;  ; 
+Mineralwasser Medium ;Anzahl/Ltr ;Preis ;Pfand
+Alwa Medium PET ;12 x 1,0 lt ;7,95;3,30
+Ensinger Sport Medium PET ;9 x 1,0 lt ;7,95;3,75
+Gerolsteiner Medium PET ;12 x 1,0 lt ;9,50;3,30
+Kloster Quelle Medium ;12 x 0,7 lt ;5,75;3,30
+Mineralquelle Q4 Medium;12 x 0,7 lt ;5,25;3,30
+Mineralquelle Q4 Medium PET ;12 x 1,0 lt ;7,50;4,50
+Rietenauer Medium ;12 x ,7 lt ;6,75;3,30
+Teinacher Medium ;12 x 0,7 lt ;6,95;3,30
+Teinacher Medium PET ;9 x 1,0 lt ;6,95;3,75
+Tönissteiner Medium ;12 x 0,75 lt ;7,95;3,30
+Tönissteiner Medium PET ;12 x 1,0 lt ;8,75;3,30
+Odenwald-Quelle Medium PET ;12 x 1,0 lt ;9,25;4,50
+Odenwald-Quelle Medium PET ;11 x 0,5 lt ;5,45;4,25
+Staatlich Fachingen Medium ;12 x 0,75 lt ;10,75;3,30
+Volvic Medium PET ;6 x 1,5 lt ;6,90;3,00
+Wiesentaler Medium ;12 x 0,7 lt ;6,25;3,30
+Wiesentaler Medium PET ;9 x 1,0 lt ;6,60;3,75
+Wiesentaler Medium ;12 x 0,5 lt ;5,65;3,30
+  ;  ;  ; 
+Mineralwasser Still / Naturelle ;Anzahl/Ltr ;Preis ;Pfand
+Alwa Naturelle PET ;12 x 1,0 lt ;7,95;3,30
+Adelholzner naturelle ;12 x 0,75 lt ;9,95;3,30
+Bad Niedernauer Römerquelle ;12 x 0,75 lt ;8,95;3,30
+Ensinger Sport Still ;9 x 1,0 lt ;7,95;3,75
+Griesbacher naturelle ;12 x 0,5 lt ;5,65;3,30
+Hirschquelle ;12 x 0,75 lt ;7,95;3,30
+Marius Quelle Frische Brise Still ;12 x 0,7 lt ;5,75;3,30
+Odenwald-Quelle Naturelle Glas ;12 x 0,7 lt ;6,95;3,30
+Odenwald-Quelle Naturelle PET ;12 x 1,0 lt ;9,25;4,50
+Odenwald-Quelle Naturelle PET ;11 x 0,5 lt ;5,45;4,25
+Peterstaler Black Forest ;12 x 0,7 lt ;8,25;3,30
+Peterstaler Black Forest PET ;6 x 1,5 lt ;6,90;3,00
+Staatlich Fachinger Still ;12 x 0,75 lt ;10,25;3,30
+Tönissteiner Naturelle ;12 x 0,7 lt ;7,95;3,30
+Tönissteiner Naturelle PET ;12 x 1,0 lt ;8,75;3,30
+Wiesentaler Still PET ;9 x 1,0 lt ;6,60;3,75
+Wiesentaler Still PET ;20 x 0,5 lt ;9,90;6,50
+  ;  ;  ; 
+Mineralwasser Italien ;Anzahl/Ltr ;Preis ;Pfand
+San Pellegrino Classic ;16 x 0,75 lt ;15,50;3,90
+San Pellegrino Classic ;24 x 0,25 lt ;14,50;5,10
+  ;  ;  ; 
+Mineralwasser Still Frankreich ;Anzahl/Ltr ;Preis ;Pfand
+Vittel Glasflasche ;12 x 1,0 lt ;12,45;3,30
+Volvic PET ;6 x 1,5 lt ;6,90;3,00
+Volvic PET ;24 x 0,5 lt ;16,50;6,00
+Volvic Zitrone PET ;6 x 1,5 lt ;10,45;3,00
+Volvic Tee Zitrone PET ;6 x 1,5 lt ;10,45;3,00
+Volvic Tee Pfirsich PET ;6 x 1,5 lt ;10,45;3,00
+  ;  ;  ; 
+Mineralwasser Gastroflasche ;Anzahl/Ltr ;Preis ;Pfand
+Apollinaris Selection Classic ;24 x 0,25 lt ;11,90;5,10
+Apollinaris Selection Vio still ;24 x 0,25 lt ;11,90;5,10
+Ensinger Gurmet Bio Medium ;20 x 0,5 lt ;13,45;4,50
+Ensinger Gourmet Bio Classic ;24 x 0,25 lt ;12,60;5,10
+Ensinger Gourmet Bio Still ;24 x 0,25 lt ;12,60;5,10
+Peterstaler Black Forest Gourmet Still ;12 x 0,75 lt ;9,95;3,30
+Peterstaler Black Forest Gourmet Medium ;12 x 0,75 lt ;9,95;3,30
+Tönissteiner Exclusive Classic ;12 x 0,75 lt ;9,60;3,30
+Tönissteiner Exclusive Classic ;24 x 0,25 lt ;9,40;5,10
+Tönissteiner Exclusive Medium ;24 x 0,25 lt ;9,40;5,10
+Tönissteiner Exclusive Naturelle ;12 x 0,75 lt ;9,60;3,30
+Tönissteiner Exclusive Naturelle ;24 x 0,25 lt ;9,40;5,10
+;;;
+;;;
+Alkoholfreie Getränke / Säfte;;;
+;;;
+Energy -Drink ;Anzahl/Ltr ;Preis ;Pfand
+BOOSTER ;6 x 1,5 lt ;12,95;1,50
+  ;  ;  ; 
+Limonaden - Getränke ;Anzahl/Ltr ;Preis ;Pfand
+Eichbaum Limonade Grapefruit Bügelflasche ;20 x 0,5 lt ;16,80;4,50
+Eichbaum Limonade Orange-Malz Bügelflasche ;20 x 0,5 lt ;16,80;4,50
+Eichbaum Limonade Zitronen-Hefe Bügelflasche ;20 x 0,5 lt ;16,80;4,50
+Libella Cola-Mix ;20 x 0,5 lt ;10,95;3,00
+Libella Orange ;20 x 0,5 lt ;10,95;3,00
+Odenwald-Quelle Mix Cola-Orange Pet ;12 x 1,0 lt ;10,95;4,50
+Odenwald-Quelle Mix Cola-Orange Pet ;11 x0,5 lt ;8,25;4,25
+Orangina Orange ;15 x 0,25 lt ;15,45;3,75
+Paulaner Spezi ;20 x 0,5 lt ;12,45;3,00
+Tönissteiner Tonja Orange ;12 x 0,75 lt ;9,25;3,30
+Tönissteiner Tonja Zitrone ;12 x 0,75 lt ;9,25;3,30
+Welde Fassbrause Holunder ;24 x 0,33 lt ;18,00;3,00
+Welde Fassbrause Zitrone ;24 x 0,33 lt ;18,00;3,00
+Wiesentaler Orange ;12 x 0,7 lt ;7,50;3,30
+Wiesentaler Zitrone ;12 x 0,7 lt ;7,50;3,30
+Wiesentaler Zitrone Pet ;20 x 0,5 lt ;12,25;6,50
+Wiesentaler Cola-Mix Pet ;20 x 0,5 lt ;12,25;6,50
+  ;  ;  ; 
+Diät Limonaden - Getränke ;Anzahl/Ltr ;Preis ;Pfand
+Odenwald-Quelle leichte Grapefruit ;12 x 1,0 lt ;10,95;4,50
+Odenwald-Quelle leichte Orange ;12 x 1,0 lt ;10,95;4,50
+Odenwald-Quelle leichte Zitrone ;12 x 1,0 lt ;10,95;4,50
+Tönissteiner Orange fit ;12 x 0,75 lt;10,25;3,30
+Tönissteiner Exotic leicht und fruchtig ;12 x 0,75 lt ;12,50;3,30
+  ;  ;  ; 
+Nektar und Frucht - Getränke ;Anzahl/Ltr ;Preis ;Pfand
+Libella ACE ;20 x 0,5 lt ;13,95;3,00
+Tönissteiner ACE Trio ;12 x 0,75   ;12,50;3,30
+Wiesentaler ACE Orange Karotte ;12 x 0,5 lt ;9,25;3,30
+  ;  ;  ; 
+Frucht - Schorle - Getränke ;Anzahlt/Ltr ;Preis ;Pfand
+Odenwald-Quelle Apfelsaftschorle Pet ;12 x 1,0 lt ;12,75;4,50
+Odenwald-Quelle Apfelsaftschorle Pet ;11 x 0,5 lt ;8,25;4,25
+Odenwald-Quelle Apfel-Kirsch Pet ;12 x 1,0 lt ;12,75;4,50
+Odenwald-Quelle Apfel-Johannisbeer Pet ;12 x 1,0 lt ;12,75;4,50
+Odenwald-Quelle Apfel-Johannisbeer Pet ;11 x 0,5 lt ;8,25;4,25
+Libella Apfel-Johannisbeer ;20 x 0,5 lt ;13,95;3,00
+Tönissteiner Apple-Mix Pet ;12 x 0,75 lt ;12,50;3,30
+Tönissteiner Apple-Mix Gastro ;24 x 0,25 lt ;13,10;5,10
+Wiesentaler Apfelsaftschorle ;12 x 0,5 lt ;8,25;3,30
+Wiesentaler Apfelsaftschorle Pet ;20 x 0,5 lt ;12,80;6,50
+  ;  ;  ; 
+Erfrischungs - Getränke ;Anzahlt/Ltr ;Preis ;Pfand
+Alwa Brewed Soda Limette-Ingwer ;24 x 0,33 lt ;25,95;3,00
+Club-Mate Tee ;20 x 0,5 lt ;16,95;4,50
+Bionade Holunder ;12 x 0,33 lt ;10,95;2,20
+Bionade Ingwer-Orange ;12 x 0,33 lt ;10,95;2,20
+Bionade Kräuter ;12 x 0,33 lt ;10,95;2,20
+Libelle Isosport ;20 x 0,5 lt ;12,50;3,00
+Odenwald-Quelle Iso-Sport Citrus Pet ;12 x 1,0 lt ;12,75;4,50
+Odenwald-Quelle Iso Sport Citrus Pet ;11 x 0,5 lt ;8,25;4,25
+Odenwald-Quelle Iso Sport Pink Grape Pet ;11 x 0,5 lt ;8,25;4,25
+Schweppes American Ginger Ale ;6 x 1,0 lt ;11,45;2,40
+Schweppes American Ginger Ale ;24 x 0,2 lt ;16,95;3,90
+Schweppes Indian Tonic Water ;6 x 1,0 lt ;11,45;2,40
+Schweppes Indian Tonic Water ;24 x 0,2 lt ;16,95;3,90
+Schweppes Original Bitter Lemon ;6 x 1,0 lt ;11,45;2,40
+Schweppes Original Bitter Lemon ;24 x 0,2 lt ;16,95;3,90
+Tönissteiner Pink Grape Iso Sport Pet ;12 x 0,75 lt ;12,50;3,30
+Wiesentaler Isosport Pet ;20 x 0,5 lt ;12,25;6,50
+Wiesentaler Lemon ;12 x 0,7 lt ;6,75;3,30
+  ;  ;  ; 
+Säfte und Nektare 0,2 Liter ;Anzahlt/Ltr ;Preis ;Pfand
+Neu´s Apfelsaft ;12 x 0,2 lt ;7,95;3,30
+Neu´s Orangensaft ;12 x 0,2 lt ;7,95;3,30
+Neu´s Traubensaft Rot ;12 x 0,2 lt ;7,95;3,30
+Neu´s Traubensaft Weiß ;12 x 0,2 lt ;7,95;3,30
+Neu´s Multivitamin-Mehrfruchtsaft ;12 x 0,2 lt ;7,95;3,30
+Neu´s Sauerkirsch-Nektar ;12 x 0,2 lt ;7,95;3,30
+Neu´s Johannisbeer-Nektar Schwarz ;12 x 0,2 lt ;7,95;3,30
+  ;  ;  ; 
+  ;  ;  ; 
+Säfte und Nektare 1,0 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Frutta Apfelsaft klar ;6 x 1,0 lt ;9,45;2,40
+Primafrucht Orangensaft ;6 x 1,0 lt ;10,25;2,40
+Neu´s Apfelsaft klar ;6 x 1,0 lt ;10,95;2,40
+Neu´s Apfelsaft naturtrüb ;6 x 1,0 lt ;10,95;2,40
+Neu´s Orangensaft ;6 x 1,0 lt ;11,45;2,40
+Neu´s Multivitaminsaft-Mehrfruchtsaft ;6 x 1,0 lt ;11,45;2,40
+Neu´s Grapefruitsaft ;6 x 1,0 lt ;13,25;2,40
+Neu´s Sauerkirsch Nektar ;6 x 1,0 lt ;13,25;2,40
+Neu´s Johannisbeer Nektar Schwarz ;6 x 1,0 lt ;13,25;2,40
+Neu´s Traubensaft Rot ;6 x 1,0 lt ;13,25;2,40
+Neu´s Traubensaft Weiß ;6 x 1,0 lt ;13,25;2,40
+Neu´s Bananen-Nektar ;6 x 1,0 lt ;13,25;2,40
+Neu´s Maracuja-Nektar ;6 x 1,0 lt ;13,25;2,40
+Rapp´s Kirsche süß ;6 x 1,0 lt ;13,25;2,40
+Rapp´s Bio Apfel Direktsaft klar ;6 x 1,0 lt ;14,95;2,40
+Rapp´s Premium Orangensaft ;6 x 1,0 lt ;13,95;2,40
+  ;  ;  ; 
+Apfelwein 1,0 Liter ;Anzahl/Ltr ;Preis ;Pfand
+Alter Hochstädter Speyerling Apfelwein ;6 x 1,0 lt ;10,95;2,40
+Müller Odenwald Goldernte Apfelwein ;6 x 1,0 lt ;10,95;2,40
+Possmann Frankfurter Apfelwein ;6 x 1,0 lt ;11,95;2,40
+  ;  ;  ; 
+Alkoholfreier Apfelwein ;Anzahl/Ltr ;Preis ;Pfand
+Rapp´s Nr.1 Apfelwein alkoholfrei ;6 x 1,0 lt ;11,95;2,40
+ ;;;

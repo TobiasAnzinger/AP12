@@ -15,10 +15,10 @@ public class Main {
 
         entityManager.getTransaction().begin();
 
-        entityManager.persist(new Schueler("Finn"));
-        entityManager.persist(new Schueler("Alex"));
-        entityManager.persist(new Schueler("Jovan"));
-        entityManager.persist(new Schueler("Tobi"));
+        entityManager.persist(new Schueler("Finn" , "C"));
+        entityManager.persist(new Schueler("Alex", "N"));
+        entityManager.persist(new Schueler("Jovan", "D"));
+        entityManager.persist(new Schueler("Tobi", "S"));
 
         entityManager.getTransaction().commit();
 

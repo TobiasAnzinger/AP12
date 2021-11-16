@@ -2,8 +2,7 @@ package jpa;
 
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -13,19 +12,23 @@ import java.io.Serializable;
 //@Getter
 //@Setter
 @Entity
+@NoArgsConstructor
 public class Schueler implements Serializable {
 
-
-    public Schueler(String name) {
+    public Schueler(String name, String nachname) {
         this.name = name;
+        this.nachname = nachname;
     }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-//    @Column(length = 50, nullable = false, unique = false)
+    @Column(length = 255, nullable = false, unique = false)
     private String name;
+
+    @Column(length = 255, nullable = false, unique = false)
+    private String nachname;
 
 }
 
