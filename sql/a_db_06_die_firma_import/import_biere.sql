@@ -4,21 +4,21 @@ SET @OLD_FOREIGN_KEY_CHECKS = @@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS = 0;
 SET @OLD_UNIQUE_CHECKS = @@UNIQUE_CHECKS, UNIQUE_CHECKS = 0;
 
 
-DROP TABLE IF EXISTS csv_biere;
-DROP TABLE IF EXISTS csv_biere_temp;
+DROP TABLE IF EXISTS csv_getraenke_temp;
 
-CREATE TABLE csv_biere_temp
+CREATE TABLE csv_getraenke_temp
 (
-    name     varchar(255),
-    anzliter varchar(255),
-    preis    VARCHAR(255),
-    pfand    VARCHAR(255)
+    TEMP_name     varchar(255),
+    TEMP_anzliter varchar(255),
+    TEMP_preis    VARCHAR(255),
+    TEMP_pfand    VARCHAR(255),
+    TEMP_id       int(11) PRIMARY KEY AUTO_INCREMENT
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8;
 
 
 LOAD DATA LOCAL INFILE '/Users/tanzinger/Projects/AP12/sql/a_db_06_die_firma_import/schnell_und_durstig.csv'
-    INTO TABLE csv_biere_temp
+    INTO TABLE csv_getraenke_temp
     CHARACTER SET utf8
     FIELDS TERMINATED BY ';'
     LINES TERMINATED BY '\n'
@@ -39,22 +39,53 @@ CREATE TABLE getraenke
   DEFAULT CHARSET = utf8;
 
 
-INSERT INTO getraenke (name, preis, pfand, anz, liter)
-SELECT name,
-       CAST(preis AS DECIMAL(5, 2)),
-       CAST(pfand AS DECIMAL(5, 2)),
-       CAST((SUBSTRING(anzliter, 1, 2)) AS INTEGER),
-       CAST(REPLACE(TRIM(SUBSTR(anzliter, LOCATE('x ', anzliter) + 2, 4)), ',', '.') AS DECIMAL(5, 2))
-FROM csv_biere_temp
-WHERE pfand != ''
-  AND pfand != 'Pfand';
+ALTER table getraenke
+    ADD CONSTRAINT fk_getraenke_typ Foreign key (tfk) References typ (id);
+
+
+CREATE FUNCTION getTypeId(getraenkeID INTEGER)
+    RETURNS INTEGER(11)
+BEGIN
+    RETURN (SELECT id
+            FROM typ
+            WHERE bez =
+                  (SELECT TEMP_name
+                   from csv_getraenke_temp
+                   where TEMP_id < getraenkeID
+                     and TEMP_pfand = 'Pfand'
+                   ORDER BY TEMP_id DESC
+                   LIMIT 1));
+END;
+
+
+INSERT INTO getraenke (name, preis, pfand, anz, liter, tfk)
+SELECT TEMP_name,
+       CAST(TEMP_preis AS DECIMAL(5, 2)),
+       CAST(TEMP_pfand AS DECIMAL(5, 2)),
+       CAST((SUBSTRING(TEMP_anzliter, 1, 2)) AS INTEGER),
+       CAST(REPLACE(TRIM(SUBSTR(TEMP_anzliter, LOCATE('x ', TEMP_anzliter) + 2, 4)), ',', '.') AS DECIMAL(5, 2)),
+       getTypeId(TEMP_id)
+FROM csv_getraenke_temp
+WHERE TEMP_pfand != ''
+  AND TEMP_pfand != 'Pfand';
 
 
 TRUNCATE typ;
 INSERT INTO typ (bez)
-SELECT name
-FROM csv_biere_temp
-WHERE pfand = 'Pfand';
+SELECT TEMP_name
+FROM csv_getraenke_temp
+WHERE TEMP_pfand = 'Pfand';
+
+
+SELECT id
+FROM typ
+WHERE bez =
+      (SELECT TEMP_name
+       from csv_getraenke_temp
+       where TEMP_id < 23
+         and TEMP_pfand = 'Pfand' > 0
+       ORDER BY id DESC
+       LIMIT 1);
 
 
 SET FOREIGN_KEY_CHECKS = @OLD_FOREIGN_KEY_CHECKS;
