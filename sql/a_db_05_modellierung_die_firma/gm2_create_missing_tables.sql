@@ -1,3 +1,5 @@
+# gm2 has to exist!
+
 USE gm2;
 
 SET @OLD_FOREIGN_KEY_CHECKS = @@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS = 0;
