@@ -43,7 +43,14 @@ ALTER table getraenke
     ADD CONSTRAINT fk_getraenke_typ Foreign key (tfk) References typ (id);
 
 
-CREATE FUNCTION getTypeId(getraenkeID INTEGER)
+TRUNCATE typ;
+INSERT INTO typ (bez)
+SELECT TEMP_name
+FROM csv_getraenke_temp
+WHERE TEMP_pfand = 'Pfand';
+
+
+CREATE FUNCTION findTypeId(getraenkeID INTEGER)
     RETURNS INTEGER(11)
 BEGIN
     RETURN (SELECT id
@@ -64,29 +71,18 @@ SELECT TEMP_name,
        CAST(TEMP_pfand AS DECIMAL(5, 2)),
        CAST((SUBSTRING(TEMP_anzliter, 1, 2)) AS INTEGER),
        CAST(REPLACE(TRIM(SUBSTR(TEMP_anzliter, LOCATE('x ', TEMP_anzliter) + 2, 4)), ',', '.') AS DECIMAL(5, 2)),
-       getTypeId(TEMP_id)
+       findTypeId(TEMP_id)
 FROM csv_getraenke_temp
 WHERE TEMP_pfand != ''
   AND TEMP_pfand != 'Pfand';
 
 
-TRUNCATE typ;
-INSERT INTO typ (bez)
-SELECT TEMP_name
-FROM csv_getraenke_temp
-WHERE TEMP_pfand = 'Pfand';
-
-
-SELECT id
-FROM typ
-WHERE bez =
-      (SELECT TEMP_name
-       from csv_getraenke_temp
-       where TEMP_id < 23
-         and TEMP_pfand = 'Pfand' > 0
-       ORDER BY id DESC
-       LIMIT 1);
+# DROP TABLE IF EXISTS csv_getraenke_temp;
 
 
 SET FOREIGN_KEY_CHECKS = @OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS = @OLD_UNIQUE_CHECKS;
+
+
+# Test
+# SELECT * FROM getraenke INNER JOIN typ ON getraenke.tfk=typ.id WHERE getraenke.id = 23;
