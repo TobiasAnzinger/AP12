@@ -25,21 +25,6 @@ LOAD DATA LOCAL INFILE '/Users/tanzinger/Projects/AP12/sql/a_db_06_die_firma_imp
     IGNORE 1 LINES;
 
 
-DROP TABLE IF EXISTS getraenke;
-CREATE TABLE getraenke
-(
-    id    int(11) PRIMARY KEY AUTO_INCREMENT,
-    name  VARCHAR(255),
-    preis decimal(5, 2),
-    efk   int(11),
-    tfk   int(11)
-) ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
-
-
-ALTER TABLE getraenke
-    ADD CONSTRAINT fk_getraenke_typ Foreign key (tfk) References typ (id);
-
 TRUNCATE typ;
 INSERT INTO typ (bez)
 SELECT TEMP_name
