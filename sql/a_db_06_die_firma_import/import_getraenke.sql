@@ -31,17 +31,14 @@ CREATE TABLE getraenke
     id    int(11) PRIMARY KEY AUTO_INCREMENT,
     name  VARCHAR(255),
     preis decimal(5, 2),
-    pfand decimal(5, 2),
-    anz   INTEGER(11),
-    liter decimal(5, 2),
+    efk   int(11),
     tfk   int(11)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8;
 
 
-ALTER table getraenke
+ALTER TABLE getraenke
     ADD CONSTRAINT fk_getraenke_typ Foreign key (tfk) References typ (id);
-
 
 TRUNCATE typ;
 INSERT INTO typ (bez)
@@ -50,6 +47,7 @@ FROM csv_getraenke_temp
 WHERE TEMP_pfand = 'Pfand';
 
 
+DROP FUNCTION IF EXISTS findTypeId;
 CREATE FUNCTION findTypeId(getraenkeID INTEGER)
     RETURNS INTEGER(11)
 BEGIN
@@ -65,19 +63,43 @@ BEGIN
 END;
 
 
-INSERT INTO getraenke (name, preis, pfand, anz, liter, tfk)
+ALTER TABLE einheit
+    ADD COLUMN IF NOT EXISTS pfand DECIMAL(5, 2);
+
+
+TRUNCATE TABLE einheit;
+INSERT INTO einheit(anzahl, volumen, pfand)
+SELECT DISTINCT CAST((SUBSTRING(TEMP_anzliter, 1, 2)) AS INTEGER),
+                CAST(REPLACE(TRIM(SUBSTR(TEMP_anzliter, LOCATE('x ', TEMP_anzliter) + 2, 4)), ',',
+                             '.') AS DECIMAL(5, 2)),
+                CAST(REPLACE(TEMP_pfand, ',', '.') AS DECIMAL(5, 2))
+FROM csv_getraenke_temp
+WHERE TEMP_pfand != ''
+  AND TEMP_pfand != 'Pfand';
+
+
+TRUNCATE TABLE produkt;
+INSERT
+INTO produkt (bez, vpreis, eid, tid)
 SELECT TEMP_name,
        CAST(TEMP_preis AS DECIMAL(5, 2)),
-       CAST(TEMP_pfand AS DECIMAL(5, 2)),
-       CAST((SUBSTRING(TEMP_anzliter, 1, 2)) AS INTEGER),
-       CAST(REPLACE(TRIM(SUBSTR(TEMP_anzliter, LOCATE('x ', TEMP_anzliter) + 2, 4)), ',', '.') AS DECIMAL(5, 2)),
+
+       (SELECT id
+        FROM einheit
+        WHERE pfand = CAST(REPLACE(TEMP_pfand, ',', '.') AS DECIMAL(5, 2))
+
+          AND anzahl =
+              CAST((SUBSTRING(TEMP_anzliter, 1, 2)) AS INTEGER)
+          AND volumen =
+              CAST(REPLACE(TRIM(SUBSTR(TEMP_anzliter, LOCATE('x ', TEMP_anzliter) + 2, 4)), ',', '.') AS DECIMAL(5, 2))
+       ),
        findTypeId(TEMP_id)
 FROM csv_getraenke_temp
 WHERE TEMP_pfand != ''
   AND TEMP_pfand != 'Pfand';
 
 
-# DROP TABLE IF EXISTS csv_getraenke_temp;
+DROP TABLE IF EXISTS csv_getraenke_temp;
 
 
 SET FOREIGN_KEY_CHECKS = @OLD_FOREIGN_KEY_CHECKS;
@@ -85,4 +107,4 @@ SET UNIQUE_CHECKS = @OLD_UNIQUE_CHECKS;
 
 
 # Test
-# SELECT * FROM getraenke INNER JOIN typ ON getraenke.tfk=typ.id WHERE getraenke.id = 23;
+# SELECT * FROM produkt INNER JOIN typ ON produkt.tid=typ.id INNER JOIN einheit ON produkt.eid=einheit.id WHERE produkt.id = 23;
