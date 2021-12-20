@@ -19,6 +19,7 @@ public class Main {
         entityManager.persist(new Schueler("Alex", "N"));
         entityManager.persist(new Schueler("Jovan", "D"));
         entityManager.persist(new Schueler("Tobi", "S"));
+        entityManager.persist(new Schueler("Tobi12345678901234567890123456789012345678901234567890aaaabbbbbbbbbbbbbbbbbbbbb", "S"));
 
         entityManager.getTransaction().commit();
 
