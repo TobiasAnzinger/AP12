@@ -7,6 +7,7 @@
         version="2.0">
     <persistence-unit name="schule">
         <class>jpa.Schueler</class>
+        <class>jpa.Klasse</class>
         <properties>
             <property name="javax.persistence.jdbc.driver"
                       value="com.mysql.jdbc.Driver"/>

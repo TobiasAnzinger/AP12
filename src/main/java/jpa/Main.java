@@ -15,12 +15,43 @@ public class Main {
 
         entityManager.getTransaction().begin();
 
-        entityManager.persist(new Schueler("Finn" , "C"));
-        entityManager.persist(new Schueler("Alex", "N"));
-        entityManager.persist(new Schueler("Jovan", "D"));
-        entityManager.persist(new Schueler("Tobi", "S"));
-        entityManager.persist(new Schueler("Tobi12345678901234567890123456789012345678901234567890aaaabbbbbbbbbbbbbbbbbbbbb", "S"));
+        Klasse klasse1 = new Klasse("3FA083");
+        entityManager.persist(klasse1);
 
+//        Schueler s1 = new Schueler("Finn", "C", klasse1);
+//        klasse1.addSchuelerToKlasse(s1);
+
+//        entityManager.persist(s1);
+
+        Schueler s1 = new Schueler("Alex", "N");
+        Schueler s2 = new Schueler("Ben", "Bauer");
+        Schueler s3 = new Schueler("John", "Doe");
+        Schueler s4 = new Schueler("Jeff", "Huber");
+
+        klasse1.addSchuelerToKlasse(s1);
+        klasse1.addSchuelerToKlasse(s2);
+        klasse1.addSchuelerToKlasse(s3);
+        klasse1.addSchuelerToKlasse(s4);
+
+        entityManager.persist(s1);
+        entityManager.persist(s2);
+        entityManager.persist(s3);
+        entityManager.persist(s4);
+
+        entityManager.persist(klasse1);
+
+
+//        entityManager.persist(new Schueler("Alex", "N", klasse1));
+//        entityManager.persist(new Schueler("Jovan", "D", klasse1));
+//        entityManager.persist(new Schueler("Tobi", "S", klasse1));
+//        entityManager.persist(new Schueler("Lukas", "H", klasse1));
+
+        Schueler tobi = new Schueler("Tobi", "A");
+//        Schueler tobi = new Schueler("Tobi", "A",klasse1);
+        klasse1.addSchuelerToKlasse(tobi);
+        entityManager.persist(tobi);
+        tobi.addKlassensprecherKlasse(klasse1);
+        entityManager.persist(klasse1);
         entityManager.getTransaction().commit();
 
 
